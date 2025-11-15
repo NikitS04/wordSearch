@@ -7,11 +7,11 @@ This implementation solves word search problem using a Trie (prefix tree) data s
 ### The Problem
 Given the massive scale (100M chars (10000x10000 grid), 1M queries),the naive approach wouldnt be efficient
 
-**Naive approach** (checking each word against each row/column):
+Naive approach - (checking each word against each row/column):
 - Time: O(queries × grid_size² × word_length)
 - For the scale given in the example: 1M × 100M × 12 = 1.2 trillion operations
 
-**Trie approach** :
+Trie approach :
 - Construction: O(n²) where n = grid dimension
 - Per-query: O(m) where m = word length
 - Total: O(n² + queries × m)
@@ -132,7 +132,7 @@ for word in words_to_find:
 Run the test suite:
 ```bash
 python3 word_search.py       # Basic functionality test
-python3 test_wordsearch.py        # Performance benchmarks
+python3 test_wordsearch.py        # 9 Custom tests for valid, invalid and boundary data
 ```
 
 ## Trade-offs and Alternatives
