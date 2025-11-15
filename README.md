@@ -47,7 +47,6 @@ For each row and column, we insert all substrings of length 4-20 into the Trie:
 - "abcd" → inserts "abcd"
 - "efgh" → inserts "efgh"
 - "aeim" → inserts "aeim"
-- etc.
 
 The Trie handles prefixes so if we have "test" and "testing", they share the prefix "test" and only change at "ing".
 
